@@ -17,17 +17,17 @@ keystone.init({
 
 	'name': 'ShaneKula.com',
 	'brand': 'ShaneKula.com',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'swig',
-	
+
 	'custom engine': swig.renderFile,
-	
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
@@ -94,6 +94,7 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
+	'pages': 'pages',
 	'posts': ['posts', 'post-categories'],
 	'enquiries': 'enquiries',
 	'users': 'users'
